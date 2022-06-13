@@ -1,0 +1,13 @@
+.polygone{
+    clip-path: polygon(1000% 50%, 100% 80%, 50% 100%, 0% 50%);
+    position: absolute;
+    top: -250px;
+    right: 0;
+    width: 700px;
+    content: '';
+    background-color: var(--lightBlue);
+    height: 500px;
+    z-index: -999;
+    
+}
+

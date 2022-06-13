@@ -1,0 +1,43 @@
+.share{
+    flex-wrap: wrap-reverse;
+    
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+    justify-content: space-around;
+}
+.desc{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+    
+}
+.desc .icons{
+    background-color:white;
+    padding: 10px;
+    color: var(--darkBlue);
+}
+.button{
+    margin-top: 30px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+
+}
+@media screen and (max-width:768px) {
+    .left{
+        width: 100%;
+    }
+    .button{
+        margin-top: 30px;
+        text-align: center;
+    }
+  }
+

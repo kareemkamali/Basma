@@ -1,0 +1,23 @@
+.codeTitle{
+text-align: center;
+
+width: 100%;
+
+}
+.codeTitle p{
+    padding:0 300px;
+}
+
+.hr{
+    content: "";
+    width: 4%;
+    height: 0px;
+    left: 47%;
+    border-bottom: 2px solid var(--lightBlue);
+
+}
+@media screen and (max-width:768px) {
+    .codeTitle p{
+        padding:0 ;
+    }
+  }

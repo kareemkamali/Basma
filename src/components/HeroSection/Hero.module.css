@@ -1,0 +1,17 @@
+
+.hero_content{
+width: 50%;
+z-index: 999;
+}
+.hero_button{
+    margin: 50px 0;
+}
+.hero_image{
+    text-align: center;
+    z-index: 999;
+}
+
+
+.hero_image img{width: 100%;
+   
+display: block}

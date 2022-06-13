@@ -1,0 +1,19 @@
+h1{
+    color: var(--blackColor);
+    font-size: clamp(10px, 3vw, 70px);
+    font-weight:700;
+    margin: 0;
+}
+h2{
+    color: var(--blackColor);
+    font-size: clamp(10px, .2vw, 60px);
+    font-weight:700;
+    margin: 0;
+
+}
+p{
+    margin: 0;
+    color: var(--greyColor);
+    font-size: clamp(10px, .5vw, 30px);
+    font-weight: 400;
+}

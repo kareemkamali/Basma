@@ -1,0 +1,31 @@
+.button {
+    position: relative;
+    border: 1px solid linear-gradient(to left,var(--lightBlue),var(--darkBlue));
+    border-radius: 7px;
+    background: linear-gradient(to left,var(--lightBlue),var(--darkBlue));
+    color: #ffff;
+    cursor: pointer;
+    padding:10px 10px;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:hover,
+  .button:active {
+    background: linear-gradient(to right,var(--lightBlue),var(--darkBlue));
+    border-color: linear-gradient(to right,var(--lightBlue),var(--darkBlue));
+  }
+
+  .button:disabled,
+  .button:hover:disabled,
+  .button:active:disabled {
+    background: #ccc;
+    color: #979797;
+    border-color: #ccc;
+    cursor: not-allowed;
+  }
+  

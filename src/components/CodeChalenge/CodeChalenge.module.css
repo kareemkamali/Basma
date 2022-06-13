@@ -1,0 +1,16 @@
+
+.code_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 33.33%;
+    margin-top: 100px;
+  gap: 10px;
+}
+.code_content img{
+    width: 50px;
+}
+.code_content p{
+    text-align: center;
+    padding:0  100px;
+}

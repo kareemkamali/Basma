@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React, { Suspense, useEffect } from 'react';
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+import {
+    BrowserRouter as Router,
+    Route,
+    Redirect,
+    Switch
+} from 'react-router-dom';
+// import SpinnerLoading from './shared/UiElement/SpinnerLoading';
+// lazy to run page when clicked
+const HomePage = React.lazy(() => import('./Pages/HomePage'));
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <>
+            <Router>
+
+                {/* page when reload between pages for first time */}
+                <Suspense fallback={
+                    <div className='centered'>
+                        Loading....
+                    </div>
+                }>
+                    <Switch>
+                        <Route path="/" exact>
+                            <Redirect to='/home-page' />
+                        </Route>
+                        <Route path='/home-page'>
+                            <HomePage></HomePage>
+                        </Route>
+                    </Switch>
+                </Suspense>
+            </Router>
+
+
+        </>
+    );
 }
 
 export default App;

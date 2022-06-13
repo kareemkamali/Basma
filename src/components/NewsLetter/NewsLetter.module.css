@@ -1,0 +1,41 @@
+.background{
+    background-image: url(../../assets/Images/newsletter-background.png);
+    background-position: center;
+    background-clip: border-box;
+    margin: auto;
+    height: 500px;
+    background-size: cover;
+    display: block;
+}
+.title{
+    margin-top: -0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+.inputs{
+
+    width: 100%;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+}
+.inputs input{
+    width: 100%;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+    background-color: whitesmoke;
+}
+ .inputs_error input{
+background-color: red;
+opacity: .2;
+color: white;
+ }
+.form a{
+    text-align: center;
+}
